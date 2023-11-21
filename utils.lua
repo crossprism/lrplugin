@@ -185,7 +185,7 @@ end
 function reportNoService(baseUrl)
    if string.find(baseUrl,'/localhost') then
       local result = LrDialogs.confirm("Service not running",
-                                       "Attemp to locally launch CrossPrism?","Launch")
+                                       "Attempt to locally launch CrossPrism?","Launch")
       if result == "ok" then
          LrShell.openPathsViaCommandLine({"crossprism://start"},"/usr/bin/open","")
       end
